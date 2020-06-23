@@ -1,0 +1,89 @@
+@media (max-width: 576px) {
+    .container {
+        width: 95vw;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-info {
+        flex-direction: column;
+    }
+
+    .header-info-about {
+        margin: 0;
+    }
+
+    .header-info-address-text {
+        text-align: center;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .header-info-address-minimap {
+        display: none;
+    }
+
+    .header-navbar {
+        position: absolute;
+        top: 60px;
+        transform: translateX(-105%);
+        transition: transform .2s;
+    }
+
+    .header-navbar.active {
+        transform: translateX(0%);
+    }
+
+    .header-navbar ul {
+        flex-direction: column;
+    }
+
+    .header-navbar ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .woman-img {
+        display: none;
+    }
+
+    header div {
+        margin-top: 10px;
+    }
+
+    .client-card-image {
+        display: none;
+    }
+
+    main {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .main-text {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .list ul {
+        margin-left: 10px;
+    }
+
+    .list ul li {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .get-card {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,405 @@
+@import url("fonts.css");
+
+body {
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Museo Sans Cyrl";
+    font-weight: 300;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1560px;
+}
+
+/* --------------------------------- header --------------------------------- */
+header {
+    padding: 20px 0;
+}
+
+.menu-btn {
+    display: none;
+    margin-left: 12px;
+}
+
+.menu-btn-elem {
+    width: 40px;
+    height: 5px;
+    background: #d7747a;
+    border-radius: 4px;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.header-info-about {
+    font-size: 14px;
+    max-width: 150px;
+    margin-left: 30px;
+    line-height: 1.3;
+}
+
+.header-info-address {
+    display: flex;
+    align-items: center;
+}
+
+.header-info-address-minimap {
+    border-radius: 50%;
+    width: 78px;
+    height: 78px;
+    background: url("../img/minimap.png") no-repeat;
+    -webkit-box-shadow: 0px 0px 16px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 16px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 16px -9px rgba(0, 0, 0, 0.75);
+    margin-right: 10px;
+}
+
+.header-info-address-text {
+    font-size: 16px;
+}
+
+.address {
+    line-height: 1.3;
+}
+
+.locate {
+    font-weight: 700;
+}
+
+.map {
+    width: 124px;
+    font-size: 12px;
+    color: #ff6078;
+    margin-top: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #ff6078;
+    padding-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hidden-map {
+    position: absolute;
+    left: -125px;
+    top: 17px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s opacity, .3s visibility;
+}
+
+.hidden-map:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.map-text {
+    font-weight: 500;
+}
+
+.map-text:hover~.hidden-map {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header-info-contacts .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 10px;
+}
+
+.header-info-contacts-elem {
+    display: flex;
+    align-items: center;
+}
+
+.header-info-contacts-elem:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.call {
+    font-weight: 500;
+}
+
+.call-us {
+    display: flex;
+    align-items: center;
+}
+
+.online-icon {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #27b24b;
+    margin-right: 5px;
+}
+
+.call-us-text {
+    font-size: 12px;
+}
+
+.number {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.work-time {
+    font-size: 16px;
+}
+
+.work-time span {
+    font-weight: 700;
+}
+
+.sign-up-btn {
+    font-family: "Museo Sans Cyrl";
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 20px 25px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    border-bottom: 3px solid #ebeaea;
+    box-sizing: border-box;
+}
+
+.sign-up-btn img {
+    margin-right: 10px;
+}
+
+.border-none {
+    border: none;
+}
+
+.header-navbar {
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 15px;
+    border-bottom: 5px solid #faf7f5;
+}
+
+.header-navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-navbar a {
+    font-size: 15px;
+    color: #282828;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.header-navbar a:hover {
+    color: #ff6078;
+}
+
+.active-link {
+    pointer-events: none;
+    cursor: default;
+    font-weight: 700;
+}
+
+/* --------------------------------- main --------------------------------- */
+main {
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.woman-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 650px;
+    z-index: -3;
+}
+
+.paral {
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+}
+
+.paral-1 {
+    right: 0;
+}
+
+.paral-2 {
+}
+
+.main-text {
+    font-size: 36px;
+    line-height: 1.1;
+    color: #282828;
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+.main-text span {
+    font-weight: 700;
+}
+
+.client-card {
+    display: flex;
+}
+
+.list-marker {
+    background: url("../img/list-marker.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+}
+
+.list ul li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.list ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.get-card {
+    padding: 20px 25px 15px;
+    background: linear-gradient(#f8b3b4, #f58389);
+    border: none;
+    border-bottom: 5px solid #d7747a;
+    outline: none;
+    border-radius: 50px;
+    width: 280px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    margin-top: 60px;
+    margin-right: 100px;
+}
+
+.get-card span {
+    display: block;
+    font-size: 14px;
+    max-width: 180px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.3;
+    text-shadow: 1px 1px 2px rgba(210, 110, 116, 0.5);
+}
+
+.get-card img {
+    position: absolute;
+    height: 60px;
+    left: 205px;
+    top: 0;
+    transition: all 1s;
+}
+
+.card-info {
+    position: relative;
+}
+
+.card-info-icon {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    background: url("../img/card-info.png") no-repeat;
+    border-radius: 50%;
+    left: 155px;
+    top: 180px;
+    animation: pulse 3s infinite;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    15% {
+        -webkit-transform: scale(1.07);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    15% {
+        -ms-transform: scale(1.07);
+        -o-transform: scale(1.07);
+        -moz-transform: scale(1.07);
+        transform: scale(1.07);
+    }
+
+    50% {
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.card-info-icon:hover {
+    animation: none;
+}
+
+.card-info-text {
+    position: absolute;
+    width: 115px;
+    background: #fff;
+    border-radius: 10%;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px;
+    left: 175px;
+    top: 0;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    -webkit-box-shadow: 8px -8px 4px -2px rgba(241, 233, 230, 0.5);
+    -moz-box-shadow: 8px -8px 4px -2px rgba(241, 233, 230, 0.5);
+    box-shadow: 8px -8px 4px -2px rgba(241, 233, 230, 0.5);
+}
+
+.card-info-icon:hover+.card-info-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-info-text p {
+    line-height: 1.3;
+}
